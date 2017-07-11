@@ -12,7 +12,7 @@ class A136Spider(scrapy.Spider):
         t_sl = response.css('center table.description tr td::text').re('[0-9]+')
         timestamp = t_sl[0] + '-' + t_sl[1] + '-' + t_sl[2] + 'T' + t_sl[3] + ':' + t_sl[4] + ':' + t_sl[5] + '+08:00'
         
-        for station in response.css('tr.Area3'):
+        for station in response.css('tr.Area16'):
             item['name'] = station.css('td span::text').re("[\u4e00-\u9fa5]{1,}")[0]
             item['sid'] = station.css('td span::text').re("[A-Z0-9]{5,}")[0]
             item['timestamp'] = timestamp

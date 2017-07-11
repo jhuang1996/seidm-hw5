@@ -25,7 +25,7 @@ SECRET_KEY = '=_j2l-y=waxhi(#9pnw-^=ca5u*ql=ni9=yn2*^2kj187-@x+d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hw5-testing-wyde.c9users.io']
+ALLOWED_HOSTS = ['hw5-forked-junghuang.c9users.io']
 
 
 # Application definition
